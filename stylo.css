@@ -1,0 +1,18 @@
+.box{
+    background-color: #EBF4F6;
+    height: 200px;
+    width: 300px;
+    padding: 12px;
+    display: inline-block;
+    float: left;
+    margin: 18px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.box i {
+    font-size: 80px;
+}
+.navbar{
+    color: black;
+}

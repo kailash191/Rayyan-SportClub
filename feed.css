@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.carousel{
+    height: 700px;
+background-color: rgb(225, 246, 255);
+/* color: black; */
+}
+.carousel .carousel-item{
+    width: 500px;
+    height: 200px;
+    color: black;
+}
+#size{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+
+}
+.carousel .carousel-item #size:hover{
+    box-shadow: 1px 1px 10px 4px rgb(21, 24, 26);
+
+}
+

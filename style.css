@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul li {
+    margin: 0px 5px;
+}
+
+/* .carticons {
+    margin: 10px 0px 0px 25px; */
+/* } */
+
+/* .carticons i {
+    margin: 0px 7px;
+    font-size: 20px;
+    cursor: pointer; */
+
+/* }
+
+.carticons i:hover {
+    color: #4ba6b3 !important;
+} */
+
+
+.navbar-brand img {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+#searchinp {
+    background-color: #4ba6b3 !important;
+    border-color: #71c8f3;
+    color: #d1ab81;
+    width: 100%;
+    max-width: 300px;
+}
+
+#searchinp::placeholder {
+    color: #ffffff !important;
+}
+
+.servicebox a {
+    text-decoration: none;
+}
+nav {
+    /* border: 1px solid red; */
+    background-color: #0717ff !important;
+    height: auto;
+    min-height: 14vh;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: center !important;
+}
+ul li a {
+    color: #ffffff !important;
+}
+
+ul li a.active {
+    color: #5fd7ff !important;
+}
+
+nav ul li a:hover {
+    color: #5fd7ff !important;
+}
+
+.dropdown-menu {
+    background-color: #0745a1 !important;
+    border-color: #027283 !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #0745a1;
+}
+
+#searchbtn {
+    background-color: #4ba6b3 !important;
+    color: #ffffff !important;
+}
+
+#searchbtn:hover {
+    background-color: #4ba6b3 !important;
+}
+
+#searchbtn:hover {
+    /* border:1px solid #d1ab81 !important; */
+    background-color: #4ba6b3;
+    color: #4ba6b3;
+}
+
+#toggle {
+    background-color: #027283 !important;
+}
+
+#toggle i {
+    font-size: 25px;
+    color: #4ba6b3;
+}
+
+#search {
+    margin-left: 50px;
+}
+.navbar-brand{
+    width: 150px !important;
+}
+
+
+h1{
+    text-align: center;
+ 
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.Indoor{
+    margin-top: 20px;
+}
+
+h3{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.Snooker{
+    margin-top: 5px;
+    margin-left: 400px;
+}
+
+.parent, .parent1, .parent2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 15px;
+}
+
+.child1, .child2, .child3, .child4, .child5, .child6 {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+}
+
+.child1 img, .child4 img, .child5 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.txheading{
+    text-align: center;
+    color: red;
+}
+
+.clicks {
+    background-color: #bef2fa;
+    padding: 20px;
+}
+.clicks img {
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+.clicks img .click{
+   transition: 1.5s;
+   border: 2px solid green;
+
+}
+.travel {
+    margin: 20px;
+}
+.travel img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .child1, .child2, .child3, .child4, .child5, .child6 {
+        width: 45%;
+    }
+    
+    #search {
+        margin-left: 20px;
+    }
+    
+    .Snooker {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        height: auto;
+    }
+
+   
+
+    nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    #search {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        width: auto !important;
+        text-align: center;
+        display: block;
+    }
+
+    .Snooker {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .travel {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .parent, .parent1, .parent2 {
+        margin-top: 20px;
+    }
+
+    .child1, .child2, .child3, .child4, .child5, .child6 {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,143 @@
+.navbar {
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+#navbarr {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 0;
+}
+
+#logo {
+    color: rgb(230, 0, 0);
+}
+
+.servicebox {
+    box-shadow: 0px 3px 12px rgb(15, 15, 11);
+    padding: 15px;
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.servicebox img {
+    height: 100px;
+    width: 110px;
+    max-width: 100%;
+    margin-top: 4px;
+}
+
+.box1 h3 {
+    box-shadow: 0px 4px 15px rgb(44, 3, 194);
+    padding: 20px;
+    background-color: rgb(47, 23, 155);
+    border-radius: 3px;
+    color: white;
+    margin: 15px auto;
+    max-width: 300px;
+}
+
+.box1 h3 i {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.box1 h3:hover {
+    transition: 0.5s;
+    background-color: rgb(199, 34, 34);
+    color: rgb(255, 255, 255);
+}
+
+.heading1 {
+    text-align: center;
+}
+
+.line h5 {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.indoor {
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+    font-weight: 900;
+    font-family: serif;
+    margin: 20px 0;
+}
+
+#man {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(165, 1, 1);
+}
+
+.img1 img {
+    max-width: 100%;
+    height: auto;
+    border: 10px solid rgb(37, 29, 29);
+    margin: 20px auto;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .box1 h3 {
+        margin: 15px auto;
+    }
+    
+    .servicebox {
+        width: calc(50% - 30px);
+        margin: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .box1 h3 {
+        height: auto;
+        width: 90%;
+        margin: 15px auto;
+        font-size: 20px;
+    }
+
+    .box1 h3 i {
+        font-size: 40px;
+    }
+
+    .servicebox {
+        width: calc(100% - 30px);
+        max-width: 300px;
+        float: none;
+        margin: 15px auto;
+    }
+
+    .indoor {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box1 h3 {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .box1 h3 i {
+        font-size: 32px;
+    }
+
+    .servicebox img {
+        height: 80px;
+        width: 90px;
+    }
+
+    .indoor {
+        font-size: 20px;
+    }
+}

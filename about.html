@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picnic Arena - About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="aboutus.css">
+
+    <style>
+        /* Basic Customizations and responsiveness for this page */
+
+        body {
+            font-family: Arial, sans-serif; /* Example font */
+        }
+
+        /* Updated Navbar Styles */
+        .navbar {
+            background-color: #0717ff !important;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            margin-right: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #5fd7ff !important;
+        }
+
+        .dropdown-menu {
+            background-color: #0745a1 !important;
+            border-color: #027283 !important;
+        }
+
+        .dropdown-item {
+            color: #fff !important;
+        }
+
+        .dropdown-item:hover {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            color: #5fd7ff !important;
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.5);
+            padding: 8px 12px;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .navbar-toggler .fa-bars {
+            color: #ffffff !important;
+            font-size: 24px;
+        }
+
+        /* About Us Section Styling */
+        .about-us-hero {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #f8f9fa; /* Light background for the hero section */
+            margin-bottom: 40px;
+        }
+
+        .about-us-hero h1 {
+            font-size: 3.5rem;
+            color: #0049db;
+            margin-bottom: 20px;
+        }
+
+        .tagline h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .about-text .btn-primary {
+            background-color: #0049db;
+            border-color: #0049db;
+            padding: 10px 25px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .about-text .btn-primary:hover {
+            background-color: #0037a3;
+            border-color: #0037a3;
+        }
+
+        .mission-vision-values .card {
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 30px;
+            height: 100%; /* Make cards same height */
+        }
+
+        .mission-vision-values .card h2 {
+            color: #0049db;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .mission-vision-values .card img {
+            max-width: 100%;
+            height: 250px; /* Fixed height for images */
+            object-fit: cover; /* Ensures images cover the area without distortion */
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .mission-vision-values .card img.hover-pic:hover {
+            transform: scale(1.03); /* Slight zoom on hover */
+        }
+
+        .mission-vision-values .card p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #666;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #0049db;
+            color: #fff;
+            padding-top: 40px;
+            margin-top: 50px;
+        }
+
+        footer .social-icons a {
+            color: #fff;
+            margin-right: 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #d4e0ff;
+        }
+
+        footer hr {
+            background-color: #fff;
+            opacity: 0.5;
+        }
+
+        footer h6 {
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        footer p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #d4e0ff;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .about-us-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .tagline h2 {
+                font-size: 2rem;
+            }
+
+            .mission-vision-values .card img {
+                height: 200px; /* Adjust image height for smaller screens */
+            }
+
+            .mission-vision-values .card {
+                padding: 20px;
+            }
+
+            /* To center the toggler button on mobile and set its color */
+            .navbar-toggler {
+                 /* margin-left: auto;  */
+                /* margin-right: auto;  */
+                display: block; 
+                float: none; 
+            }
+
+            .navbar-toggler .fa-bars {
+                color: #ffffff !important; /* Specific color for mobile toggler */
+            }
+
+            .navbar-brand {
+                /* On small screens, if you want the logo centered too */
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px; /* Add some space below the logo */
+            }
+         
+            /* Ensure the nav links stack properly */
+            .navbar-nav {
+                text-align: center; /* Center the links when collapsed */
+            }
+
+            .navbar-nav .nav-item {
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .about-us-hero {
+                padding: 40px 0;
+            }
+            .about-us-hero h1 {
+                font-size: 2rem;
+            }
+            .tagline h2 {
+                font-size: 1.5rem;
+            }
+            .about-text p {
+                font-size: 1rem;
+            }
+            .navbar-brand img {
+                max-width: 100px;
+            }
+            
+            /* Remove the `text-md-start` class from the footer columns if it's there,
+               as `text-center` already applies on small screens by default */
+            footer .col-md-3,
+            footer .col-md-2,
+            footer .col-md-4 {
+                text-align: center !important; /* Ensure all footer columns are centered on very small screens */
+            }
+        }
+
+        /* Override Bootstrap's default dropdown menu positioning for mobile */
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                background-color: #0717ff;
+                padding: 15px;
+                border-radius: 0 0 10px 10px;
+            }
+
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .navbar-nav .nav-item {
+                margin: 5px 0;
+            }
+
+            .dropdown-menu {
+                text-align: center;
+                background-color: transparent !important;
+                border: none;
+                padding: 0;
+            }
+
+            .dropdown-item {
+                padding: 8px 15px;
+            }
+
+            .navbar-brand img {
+                max-width: 120px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/1720790071182.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Indoor Games
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="MensIndoorGames.html">Mens</a></li>
+                            <li><a class="dropdown-item" href="WomensIndoorGames.html">Womens</a></li>
+                            <li><a class="dropdown-item" href="KidsIndoorGames.html">Kids</a></li>
+                            <li><a class="dropdown-item" href="FamilysIndoorGames.html">Family</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Outdoor Games
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="MenOutdoorGames.html">Mens</a></li>
+                            <li><a class="dropdown-item" href="WomenOutdoorGames.html">Womens</a></li>
+                            <li><a class="dropdown-item" href="KidOutdoorGames.html">Kids</a></li>
+                            <li><a class="dropdown-item" href="FamilyOutdoorGames.html">Family</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="about-us-hero">
+        <div class="container">
+            <h1 class="mb-2">About Us</h1>
+            <div class="row align-items-center">
+                <div class="col-md-6 tagline">
+                    <h2>"NATURE SCAPE FOR <br> PICNIC PLEASURES"</h2>
+                </div>
+                <div class="col-md-6 about-text">
+                    <p>The Picnic Arena in the Picnic Game seems to be a concept that can be interpreted in different
+                        ways.</p>
+                    <p>From the search results, I found that the Koorsen Picnic Patio is a physical location where
+                        people can enjoy a picnic with friends, family, or clients while watching a baseball game. It's
+                        a venue that offers an ALL YOU CAN EAT buffet and a fun atmosphere.</p>
+                    <p>However, in the context of the Picnic Game, the Picnic Arena might refer to a virtual or
+                        hypothetical setting where players can engage in a fun and interactive experience. It could be a
+                        platform where players can participate in games, challenges, and activities that are related to
+                        picnics.</p>
+                    <button id="btn1" class="btn btn-primary">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission-vision-values">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <h2>Our Mission</h2>
+                        <img src="young-sisters-reading-picnic-cloth_23-2147638990.avif" alt="Our Mission Image"
+                            class="img-fluid hover-pic">
+                        <p>At Picnic Arena, our mission is to help you create unforgettable outdoor experiences with
+                            your loved ones. We believe that picnics are more than just a meal in the park - they're a
+                            chance to connect, laugh, and make memories that last a lifetime.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <h2>Our Vision</h2>
+                        <img src="happy-students-park_23-2147650669.jpg" alt="Our Vision Image"
+                            class="img-fluid hover-pic">
+                        <p>"At picnic arena, our vision is to create a vibrant online community where people of all ages
+                            can come together to play, learn, and have fun in a virtual picnic setting. We aim to design
+                            an engaging and interactive platform that sparks imagination, fosters social connections,
+                            and provides a relaxing escape from the hustle and bustle of daily life.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <h2>Our Values</h2>
+                        <img src="unnamed.jpg" alt="Our Values Image" class="img-fluid hover-pic">
+                        <p>
+                            <strong>Inclusivity:</strong> We believe that everyone deserves a seat at the picnic table.
+                            We strive to create an environment where people from all backgrounds, ages, and abilities
+                            can come together and feel welcome.
+                            <br><br>
+                            <strong>Fun:</strong> Most importantly, we believe that picnics should be FUN! We create
+                            experiences that are enjoyable, entertaining, and memorable for players of all ages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center text-lg-start text-white">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 social-icons"
+            style="background-color: #0016dd">
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <div>
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Picnic Arena</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #0e48e7; height: 2px" />
+                        <p>
+                            Here you can use our indoor and outdoor games details with
+                            content. Stay connected with us on our site and follow the rules
+                            carefully.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Tags</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #0767d4; height: 2px" />
+                        <p>
+                            <a href="#" class="text-white">Picnic Games</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white">Fun Games</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white">Play in Outdoor</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white">Play in Indoor</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #1d0eec; height: 2px" />
+                        <p>
+                            <a href="about.html" class="text-white">About us</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="text-white">Contact us</a>
+                        </p>
+                        <p>
+                            <a href="feedback.html" class="text-white">Feedback</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #091fe6; height: 2px" />
+                        <p><i class="fas fa-home me-3"></i> Dhobi-Ghat-Leamarket-Karachi</p>
+                        <p><i class="fas fa-envelope me-3"></i>picnicarena@aptechgdn.net</p>
+                        <p><i class="fas fa-phone me-3"></i> + 92 3142065288</p>
+                        <p><i class="fas fa-print me-3"></i> + 92 3142065288</p>
+                    </div>
+                    </div>
+                </div>
+        </section>
+        <div class="text-center p-3" style="background-color: rgba(1, 83, 236, 0.2)">
+            ©PICNIC ARENA 2025 Copyright:
+        </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
